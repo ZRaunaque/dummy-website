@@ -107,37 +107,53 @@ a:hover {
 .cardsCont {
   display: flex;
   justify-content: center;
-  padding: 30px 0 0;
+  flex-wrap: wrap;
+  padding: 20px 16px 0;
+  @media screen and (min-width: 768px) {
+    padding: 30px 16px 0;
+  }
 }
 
 .card {
   background: #fff;
   color: #1a315e;
   border: 1px solid rgba(#fff, 0.4);
-  width: 450px;
-  height: 400px;
+  width: 400px;
+  height: 350px;
   font-size: 20px;
   border-radius: 5px;
   text-align: center;
   line-height: 150%;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px 20px;
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #030f27;
-    margin: 0 0 20px;
+  margin: 10px;
+  @media screen and (min-width: 768px) {
+    margin: 10px 20px;
+    width: 450px;
+    height: 400px;
+    padding: 20px;
   }
-  h3 {
+  h2 {
     font-size: 30px;
     text-align: center;
     color: #030f27;
+    margin: 0 0 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #030f27;
     margin: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
   }
   .textContent {
     padding: 20px 0 0;
