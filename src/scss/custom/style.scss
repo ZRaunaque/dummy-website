@@ -1,0 +1,150 @@
+/**
+* Template Name: Chaman Impex
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Raleway Dots', cursive;
+  color: #fff;
+  background: #030f27;
+  line-height: 120%;
+  font-weight: 400;
+  min-height: 90vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ed502e;
+  border-top-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: rgba(#fff, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background: #fff;
+    color: #030f27;
+  }
+  
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.header {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 0;
+  line-height: 150%;
+}
+.cardsCont {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0;
+}
+
+.card {
+  background: #fff;
+  color: #1a315e;
+  border: 1px solid rgba(#fff, 0.4);
+  width: 450px;
+  height: 400px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 150%;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #030f27;
+    margin: 0 0 20px;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #030f27;
+    margin: 0;
+  }
+  .textContent {
+    padding: 20px 0 0;
+    border-top: 1px solid rgba(#1a315e, 0.2);
+  }
+
+  a {
+    color: #1a315e;
+  }
+}
